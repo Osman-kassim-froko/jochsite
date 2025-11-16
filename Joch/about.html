@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About JoCh Analytics and Consult</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Learn about JoCh Analytics and Consult, founded by John Osman Froko and Christopher Mbiba, a passionate team driving data and policy insights."/>
+  <style>
+    /* Horizontal scroll only on mobile (below md) */
+    @media (max-width: 767px) {
+      .mobile-scroll-container {
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      .mobile-scroll-item {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+      }
+      .mobile-scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      .mobile-scroll-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
+
+    /* Vertical grid on desktop (md and above) */
+    @media (min-width: 768px) {
+      .desktop-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @media (min-width: 1024px) {
+        .desktop-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html#home" class="font-extrabold tracking-tight text-xl">JoCh <span class="text-teal-700">Analytics and Consult</span></a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html#services" class="hover:text-teal-600">Services</a>
+        <a href="index.html#work" class="hover:text-teal-600">Work</a>
+        <a href="index.html#articles" class="hover:text-teal-600">Articles</a>
+        <a href="#about" class="hover:text-teal-600">About</a>
+        <a href="index.html#contact" class="hover:text-teal-600">Contact</a>
+      </nav>
+      <a href="index.html#contact" class="ml-3 inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold bg-teal-600 text-white hover:bg-teal-700">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-3xl md:text-4xl font-extrabold">About Us</h1>
+      <p class="mt-6 text-lg text-slate-600">
+        The team at JoCh Analytics and Consult is driven by a passion for data, research, and policy analysis. Founded by John Osman Froko and Christopher Mbiba, both former research assistants at the University of Cape Coast, our mission is to provide insightful analytics and consulting services that empower businesses and organizations to make informed decisions.
+      </p>
+
+      <!-- Staff Section - Responsive: Horizontal scroll on mobile, Grid on desktop -->
+      <h2 class="mt-10 text-2xl md:text-3xl font-extrabold">Our Team</h2>
+
+      <!-- Mobile: Horizontal Scroll -->
+      <div class="mt-6 md:hidden">
+        <div class="overflow-x-auto mobile-scroll-container">
+          <div class="flex gap-6 py-4">
+
+            <!-- Team Member 1 -->
+            <div class="mobile-scroll-item w-80">
+              <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-full flex flex-col">
+                <img src="assets/images/alhassan_profile.jpg" alt="Alhassan Abdul-Wakeel Karakara (PhD)" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+                <h3 class="font-semibold text-lg text-center">Alhassan Abdul-Wakeel Karakara (PhD)</h3>
+                <p class="mt-2 text-sm text-slate-600 text-center">Senior Lecturer, Dept. of Applied Economics, University of Cape Coast</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Director and Researcher at CEPGA. Email: <a href="mailto:alhassan.karakara@ucc.edu.gh" class="text-teal-600 hover:text-teal-800">alhassan.karakara@ucc.edu.gh</a></p>
+                <a href="https://cepgaafrica.org" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/link.svg" alt="Website" class="w-5 h-5 mr-1">
+                  CEPGA Website
+                </a>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="mobile-scroll-item w-80">
+              <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-full flex flex-col">
+                <img src="assets/images/john_profile.jpg" alt="John Osman Froko" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+                <h3 class="font-semibold text-lg text-center">John Osman Froko</h3>
+                <p class="mt-2 text-sm text-slate-600 text-center">Co-founder | In the field of economics with focus on finance</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">.</p>
+                <a href="https://www.linkedin.com/in/osmanfroko" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="mobile-scroll-item w-80">
+              <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-full flex flex-col">
+                <img src="assets/images/chris_profile.jpg" alt="Christopher Mbiba" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+                <h3 class="font-semibold text-lg text-center">Christopher Mbiba</h3>
+                <p class="mt-2 text-sm text-slate-600 text-center">Co-founder | Aspiring Economist and Data Scientist</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Christopher drives our economic research and data science innovations.</p>
+                <a href="https://www.linkedin.com/in/christophermbiba" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="mobile-scroll-item w-80">
+              <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-full flex flex-col">
+                <img src="assets/images/joellin_profile.jpg" alt="Joellin (Aboagyewah) Inkum" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+                <h3 class="font-semibold text-lg text-center">Joellin Aboagyewah Inkum</h3>
+                <p class="mt-2 text-sm text-slate-600 text-center">Lead Researcher | Aspiring Economic and Finance Policy Expert</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Joellin spearheads our research initiatives with expertise in policy analysis.</p>
+                <a href="https://www.linkedin.com/in/joellin-inkum-638262242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="mobile-scroll-item w-80">
+              <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-full flex flex-col">
+                <img src="assets/images/beris_profile.jpg" alt="Naah Randy Berisbond" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+                <h3 class="font-semibold text-lg text-center">Naah Randy Berisbond</h3>
+                <p class="mt-2 text-sm text-slate-600 text-center">Development Management Expert</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Monitoring and Evaluation Officer at ProNet</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Randy has led many research teams and brings us a wealth of knowledge and experience.</p>
+                <a href="http://linkedin.com/in/randy-naah-berisbond" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="mobile-scroll-item w-80">
+              <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm h-full flex flex-col">
+                <img src="assets/images/pascal_profile.jpg" alt="Pascal Kpienta" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+                <h3 class="font-semibold text-lg text-center">Pascal Kpienta</h3>
+                <p class="mt-2 text-sm text-slate-600 text-center">BSc Economics with Finance</p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Email: <a href="mailto:pascal.kpienta@stu.ucc.edu.gh" class="text-teal-600 hover:text-teal-800">pascal.kpienta@stu.ucc.edu.gh</a></p>
+                <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Scroll hint for mobile -->
+        <p class="mt-4 text-sm text-slate-500 text-center">Scroll to see more</p>
+      </div>
+
+      <!-- Desktop: Vertical Grid -->
+      <div class="mt-6 hidden md:block">
+        <div class="desktop-grid">
+
+          <!-- Team Member 1 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+            <img src="assets/images/alhassan_profile.jpg" alt="Alhassan Abdul-Wakeel Karakara (PhD)" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+            <h3 class="font-semibold text-lg text-center">Alhassan Abdul-Wakeel Karakara (PhD)</h3>
+            <p class="mt-2 text-sm text-slate-600 text-center">Senior Lecturer, Dept. of Applied Economics, University of Cape Coast</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Director and Researcher at CEPGA. Email: <a href="mailto:alhassan.karakara@ucc.edu.gh" class="text-teal-600 hover:text-teal-800">alhassan.karakara@ucc.edu.gh</a></p>
+            <a href="https://cepgaafrica.org" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/link.svg" alt="Website" class="w-5 h-5 mr-1">
+              CEPGA Website
+            </a>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+            <img src="assets/images/john_profile.jpg" alt="John Osman Froko" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+            <h3 class="font-semibold text-lg text-center">John Osman Froko</h3>
+            <p class="mt-2 text-sm text-slate-600 text-center">Co-founder | In the field of economics with focus on finance</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">.</p>
+            <a href="https://www.linkedin.com/in/osmanfroko" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+            <img src="assets/images/chris_profile.jpg" alt="Christopher Mbiba" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+            <h3 class="font-semibold text-lg text-center">Christopher Mbiba</h3>
+            <p class="mt-2 text-sm text-slate-600 text-center">Co-founder | Aspiring Economist and Data Scientist</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Christopher drives our economic research and data science innovations.</p>
+            <a href="https://www.linkedin.com/in/christophermbiba" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+            <img src="assets/images/joellin_profile.jpg" alt="Joellin (Aboagyewah) Inkum" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+            <h3 class="font-semibold text-lg text-center">Joellin Aboagyewah Inkum</h3>
+            <p class="mt-2 text-sm text-slate-600 text-center">Lead Researcher | Aspiring Economic and Finance Policy Expert</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Joellin spearheads our research initiatives with expertise in policy analysis.</p>
+            <a href="https://www.linkedin.com/in/joellin-inkum-638262242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- Team Member 5 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+            <img src="assets/images/beris_profile.jpg" alt="Naah Randy Berisbond" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+            <h3 class="font-semibold text-lg text-center">Naah Randy Berisbond</h3>
+            <p class="mt-2 text-sm text-slate-600 text-center">Development Management Expert</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Monitoring and Evaluation Officer at ProNet</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Randy has led many research teams and brings us a wealth of knowledge and experience.</p>
+            <a href="http://linkedin.com/in/randy-naah-berisbond" target="_blank" class="mt-3 inline-flex items-center justify-center text-teal-600 hover:text-teal-800 text-sm">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mr-1">
+              LinkedIn
+            </a>
+          </div>
+
+          <!-- Team Member 6 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col">
+            <img src="assets/images/pascal_profile.jpg" alt="Pascal Kpienta" class="w-56 h-56 rounded-full object-cover mb-4 mx-auto">
+            <h3 class="font-semibold text-lg text-center">Pascal Kpienta</h3>
+            <p class="mt-2 text-sm text-slate-600 text-center">BSc Economics with Finance</p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Email: <a href="mailto:pascal.kpienta@stu.ucc.edu.gh" class="text-teal-600 hover:text-teal-800">pascal.kpienta@stu.ucc.edu.gh</a></p>
+            <p class="mt-2 text-sm text-slate-600 text-center">Former Research Assistant at the University of Cape Coast</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-500 text-center">
+      © 2025 JoCh Analytics and Consult.
+    </div>
+  </footer>
+</body>
+</html>
